@@ -1,0 +1,101 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+@import url('https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css');
+
+* {
+  font-family: '{{fontName}}', sans-serif;
+  font-size: {{fontSize}}px;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+.user-container {
+  display: inline-block;
+  width: calc({{widthSet}} + calc({{emoteSize}} * 3px));
+  height: {{fontSize}}px;
+  line-height: {{fontSize}}px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, {{bgColor1}} 0%, {{bgColor2}} 70%, rgba(0,0,0,0) 100%);
+  border-style: solid none solid solid;
+  border-width: 1px;
+  border-color: rgba(255,255,255,0.05);
+  padding-left: 7px;
+  padding-right: 8px; 
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.user-box {
+  overflow: hidden;
+  width: {{widthSet}};
+  margin-right: 3px !important;
+  color: {{userColor}} !important;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: {{fontSize}}px;
+}
+
+.user-message {
+  text-transform: none;
+  color: {{fontColor}} !important;
+  font-weight: 100;
+  width: auto;
+  height: fit-content;
+  overflow: hidden;
+  white-space: {{heightSet}};
+  text-overflow: ellipsis;
+  padding-left: 5px;
+  padding-top: 3px;
+  line-height: {{fontSize}}px;
+}
+
+.main-container {
+  display: {{msgDisplay}};
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 15px;
+}
+
+.box {
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+.container {
+  vertical-align: text-top;
+}
+
+.message-row {
+  flex: 0 0 auto;
+  width: 98%;
+  background-color:transparent;
+  overflow: hidden;
+  margin-bottom: 1px;
+  height: auto;
+}
+
+.badge {
+  display: {{badgesVisibility}};
+  position: relative;
+  height: {{emoteSize}}px;
+  width: {{emoteSize}}px;
+  line-height: {{emoteSize}}px;
+  vertical-align: text-top;
+  padding-top: 2px;
+}
+
+.emote {
+  height: {{emoteSize}}px;
+  vertical-align: center;
+  background-repeat:no-repeat;
+}
+
+.action {
+  font-style: italic;
+}
